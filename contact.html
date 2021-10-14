@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <h1>Donnez moi d'autre recette</h1>
 
-    <div>
+    <div class="container">
+
         <form action="#" method="post">
 
-            <div>
-                <label for="name">Nom</label>
-                <input type="text" id="name" name="name">
-            </div>
+            <label for="name">Nom & prénom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom et prénom">
 
-            <div>
-                <label for="mail">E-Mail</label>
-                <input type="email" id="mail" name="mail">
-            </div>
+            <label for="emailAddress">Email</label>
+            <input id="emailAddress" type="email" name="email" placeholder="Votre email">
 
-            <div>
-                <label for="message">Votre message</label>
-                <textarea id="message" name="message"></textarea>
-            </div>
+            <label for="plat">Plat</label>
+            <input type="text" id="plat" name="plat" placeholder="plat">
 
+            <label for="recet">Recette</label>
+            <textarea id="recet" name="recete" placeholder="Votre recette" ></textarea>
+
+            <input type="submit" value="Envoyer">
         </form>
-    </div>
 
-    <a href="index.html">Menu principal</a>
+        <a href="index.html">Menu principal</a>
+
+    </div>
 
 </body>
 </html>
